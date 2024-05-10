@@ -1715,7 +1715,12 @@ pub const ST_NOATIME: ::c_ulong = 1024;
 pub const ST_NODIRATIME: ::c_ulong = 2048;
 pub const ST_RELATIME: ::c_ulong = 4096;
 
+pub const RTLD_LOCAL: ::c_int = 0;
+pub const RTLD_LAZY: ::c_int = 0x1;
+pub const RTLD_NOW: ::c_int = 0x2;
 pub const RTLD_NOLOAD: ::c_int = 0x4;
+pub const RTLD_GLOBAL: ::c_int = 0x100;
+pub const RTLD_NODELETE: ::c_int = 0x1000;
 
 pub const SEM_FAILED: *mut sem_t = 0 as *mut sem_t;
 
